@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivse</title>
+    <link rel="shortcut icon" href="../../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="addprof.css">
+    <script src="../../ajax/sweetalert211.js"></script>
+
+    <script src="../../ajax/jQuery.js"></script>
+</head>
+<body>
+  <div id="feedback-form">
+    <h2 class="header">Insira o Professor</h2>
+
+    <label for="nomeprofessor">Nome:</label><br>
+        <input type="text" id="nomeprofessor" name="nomeprofessor"><br>
+        <label for="cpf">CPF:</label><br>
+        <input type="text" name="cpf" id="cpf" maxlength="14" placeholder="000.000.000-00"><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" name="senha" id="senha" placeholder="senha"><br>
+        <!-- Adicionado ID ao botão -->
+      <button class="btn" id="btn" onclick="insertProfessor()">Inserir Professor</button>      
+      <a href="../telamain/telamain.html">
+        
+        <button class="btn">Voltar</button>
+      </a>
+  </div>
+  <script src="addprof.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,5 @@
+revisar os nomes dos botões;
+retirar o carregamento;
+limpar os campos apos inserir a informação;
+fazer o upload do codigo;
+o desativar não funciona;

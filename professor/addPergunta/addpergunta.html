@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivse</title>
+    <link rel="shortcut icon" href="../../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="addPergunta.css">
+    <script src="../../ajax/jQuery.js"></script>
+    <script src="../../ajax/sweetalert211.js"></script>
+
+    
+
+    <script src="pergunta.js"></script>
+</head>
+<body>
+  <div id="feedback-form">
+    <h2 class="header">Insira a Pergunta</h2>
+    <div>
+      <form>
+        <label for="municipios">Municipio:</label><br>
+        <select name="municipios" id="municipios" readonly="">  
+          <option value="0"></option>
+                  
+          <option value="75">Amparo de São Francisco</option>
+                    
+                     
+          <option value="24">Aquidabã</option>
+                    
+                     
+          <option value="1">Aracaju</option>
+                    
+                     
+          <option value="47">Arauá</option>
+                    
+                     
+          <option value="28">Areia Branca</option>
+                    
+                     
+          <option value="9">Barra dos Coqueiros</option>
+                    
+                     
+          <option value="19">Boquim</option>
+                    
+                     
+          <option value="53">Brejo Grande</option>
+                    
+                     
+          <option value="27">Campo do Brito</option>
+                    
+                     
+          <option value="68">Canhoba</option>
+                    
+                     
+          <option value="15">Canindé de São Francisco</option>
+                    
+                     
+          <option value="14">Capela</option>
+                    
+                     
+          <option value="25">Carira</option>
+                    
+                     
+          <option value="37">Carmópolis</option>
+                    
+                     
+          <option value="63">Cedro de São João</option>
+                    
+                     
+          <option value="29">Cristinápolis</option>
+                    
+                     
+          <option value="67">Cumbe</option>
+                    
+                     
+          <option value="65">Divina Pastora</option>
+                    
+                     
+          <option value="6">Estância</option>
+                    
+                     
+          <option value="60">Feira Nova</option>
+                    
+                     
+          <option value="35">Frei Paulo</option>
+                    
+                     
+          <option value="43">Gararu</option>
+                    
+                     
+          <option value="73">General Maynard</option>
+                    
+                     
+          <option value="61">Graccho Cardoso</option>
+                    
+                     
+          <option value="50">Ilha das Flores</option>
+                    
+                     
+          <option value="31">Indiaroba</option>
+                    
+                     
+          <option value="3">Itabaiana</option>
+                    
+                     
+          <option value="11">Itabaianinha</option>
+                    
+                     
+          <option value="64">Itabi</option>
+                    
+                     
+          <option value="12">Itaporanga Ajuda</option>
+                    
+                     
+          <option value="33">Japaratuba</option>
+                    
+                     
+          <option value="39">Japoatã</option>
+                    
+                     
+          <option value="4">Lagarto</option>
+                    
+                     
+          <option value="20">Laranjeiras</option>
+                    
+                     
+          <option value="58">Macambira</option>
+                    
+                     
+          <option value="69">Malhada dos Bois</option>
+                    
+                     
+          <option value="42">Malhador</option>
+                    
+                     
+          <option value="34">Maruim</option>
+                    
+                     
+          <option value="45">Moita Bonita</option>
+                    
+                     
+          <option value="36">Monte Alegre de Sergipe</option>
+                    
+                     
+          <option value="55">Muribeca</option>
+                    
+                     
+          <option value="32">Neópolis</option>
+                    
+                     
+          <option value="49">Nossa Senhora Aparecida</option>
+                    
+                     
+          <option value="10">Nossa Senhora da Glória</option>
+                    
+                     
+          <option value="18">Nossa Senhora das Dores</option>
+                    
+                     
+          <option value="59">Nossa Senhora de Lourdes</option>
+                    
+                     
+          <option value="2">Nossa Senhora do Socorro</option>
+                    
+                     
+          <option value="40">Pacatuba</option>
+                    
+                     
+          <option value="74">Pedra Mole</option>
+                    
+                     
+          <option value="56">Pedrinhas</option>
+                    
+                     
+          <option value="62">Pinhão</option>
+                    
+                     
+          <option value="52">Pirambu</option>
+                    
+                     
+          <option value="13">Poço Redondo</option>
+                    
+                     
+          <option value="22">Poço Verde</option>
+                    
+                     
+          <option value="17">Porto da Folha</option>
+                    
+                     
+          <option value="16">Propriá</option>
+                    
+                     
+          <option value="26">Riachão do Dantas</option>
+                    
+                     
+          <option value="51">Riachuelo</option>
+                    
+                     
+          <option value="30">Ribeirópolis</option>
+                    
+                     
+          <option value="48">Rosário do Catete</option>
+                    
+                     
+          <option value="23">Salgado</option>
+                    
+                     
+          <option value="38">Santa Luzia do Itanhy</option>
+                    
+                     
+          <option value="66">Santa Rosa de Lima</option>
+                    
+                     
+          <option value="57">Santana do São Francisco</option>
+                    
+                     
+          <option value="44">Santo Amaro das Brotas</option>
+                    
+                     
+          <option value="5">São Cristóvão</option>
+                    
+                     
+          <option value="46">São Domingos</option>
+                    
+                     
+          <option value="72">São Francisco</option>
+                    
+                     
+          <option value="70">São Miguel do Aleixo</option>
+                    
+                     
+          <option value="8">Simão Dias</option>
+                    
+                     
+          <option value="54">Siriri</option>
+                    
+                     
+          <option value="71">Telha</option>
+                    
+                     
+          <option value="7">Tobias Barreto</option>
+                    
+                     
+          <option value="41">Tomar do Geru</option>
+                    
+                     
+          <option value="21">Umbaúba</option>
+                    
+ </select><br>
+        <label for="pergunta">Pergunta:</label><br>
+        <input type="text" id="pergunta" name="pergunta"><br>
+        <label for="repCerta">Resposta Certa:</label><br>
+        <input type="text" id="repCerta" name="repCerta"><br>
+        <label for="repErrada1">Resposta Errada 1:</label><br>
+        <input type="text" id="repErrada1" name="repErrada1"><br>
+        <label for="repErrada2">Resposta Errada 2:</label><br>
+        <input type="text" id="repErrada2" name="repErrada2"><br>
+        <label for="repErrada3">Resposta Errada 3:</label><br>
+        <input type="text" id="repErrada3" name="repErrada3"><br>
+      </form> 
+      <button class="btn" onclick="insertPergunta()">Inserir Pergunta</button>      
+      <a href="../telamain/telamain.html">
+        <button class="btn">Voltar</button>
+      </a>
+    </div>
+  </div>
+    
+</body>
+</html>
